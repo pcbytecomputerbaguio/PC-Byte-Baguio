@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - PC Byte Computer Parts and Accessories</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+        function showCategory(category) {
+            var categories = document.getElementsByClassName('category');
+            for (var i = 0; i < categories.length; i++) {
+                categories[i].style.display = 'none';
+            }
+            document.getElementById(category).style.display = 'table-row-group';
+        }
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+    </script>
+    <style>
+        .parts {
+            padding: 10px 10px;
+            margin: 0 auto 0 150px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            flex: 1 1 50%;
+            max-width: calc(50% - 10px);
+        }
+
+        .select-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+          <a href="index.html" class="logo">
+            <img src="images/computerparts/LOGO/7.png" alt="Logo" width="220px" />
+          </a>
+          <nav>
+            <ul class="menu__box" id="MenuItems">
+                <li><a class="menu__item" href="categorieslaptops.html">LAPTOPS</a></li>
+              <li><a class="menu__item" href="categoriespcparts.html">PC PARTS</a></li>
+              <li><a class="menu__item" href="categoriesperipherals.html">PERIPHERALS</a></li>
+              <li><a class="menu__item" href="categoriesaccessoriesandothers.html">ACCESSORIES AND OTHERS</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="Bottom_menu">
+        <a class="menu__item" href="categoriespcparts.html"><img src="images/categories/pcparticon.png" />PC PARTS</a>
+        <a class="menu__item" href="categoriesperipherals.html"><img src="images/categories/peripherals.png" />PERIPHERALS</a>
+        <a href="index.html"><img src="images/home.png" />Home</a>
+        <a class="menu__item" href="categorieslaptops.html"><img src="images/categories/laptop image.png" />LAPTOPS</a>
+        <a class="menu__item" href="categoriesaccessoriesandothers.html"><img src="images/categories/router.png" />ACCESSORIES AND OTHERS</a>
+      </div>
+
+    <div class="select-wrapper">
+        <select id="category-select" onchange="showCategory(this.value)" class="parts">
+            <option value=""></option>
+            <option value="processors">CPU</option>
+            <option value="casing">CASING</option>
+            <option value="cpuCoolers">CPU COOLER</option>
+            <option value="graphics-cards">GPU</option>
+            <option value="Motherboard">MOTHERBOARD</option>
+            <option value="fan">FAN</option>
+            <option value="powersupply">POWER SUPPLY</option>
+            <option value="ram">RAM</option>
+            <option value="ssd">SSD</option>
+            <option value="hdd">HDD</option>
+        </select>
+    </div>
+
+
+
+    <div class="big-container">
+        <div class="small-container"><br>
+            <H1>PC PARTS</H1><br>
+
+            <div id="graphics-cards" class="category">
+                <h2>GPU</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/computerparts/graphicscard/1rog4gb560.png">
+                        <h4>ROG STRIX RX 560 4GB</h4>
+                        <h3>₱5,500.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/graphicscard/2Intel Arc A380 Challenger ITX 6GB OC(M1).png">
+                        <h4>ASROCK INTEL ARC A380 CHALLENGER 6GB</h4>
+                        <h3>₱8,700.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/graphicscard/5pny1650.png">
+                        <h4>PNY GTX1650 4GB</h4>
+                        <h3>₱9,500.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/graphicscard/12galax3050.png">
+                        <h4>GALAX RTX 3050 8GB</h4>
+                        <h3>₱12,500.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/graphicscard/4sapphirerx6600.png">
+                        <h4>AMD RADEON RX 6600 8GB SAPPHIRE PULSE</h4>
+                        <h3>₱13,000.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/graphicscard/3galax3060.png">
+                        <h4>GALAX GeForce RTX 3060 1-Click OC 8GB GDDR6</h4>
+                        <h3>₱14,000.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/graphicscard/11a3060.png">
+                        <h4>GALAX RTX 3060 OC 8GB DUAL</h4>
+                        <h3>₱14,000.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/graphicscard/pnyvertortx4060.png">
+                        <h4>PNY VERTO RTX 4060 8GB DUAL FAN </h4>
+                        <h3>₱17,600.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/graphicscard/7Radeon RX 6650 XT Steel Legend 8GB OC(M1).png">
+                        <h4>ASROCK RX 6650XT 8GB STEEL LEGEND WHITE TRI FAN FAN</h4>
+                        <h3>₱18,000.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/graphicscard/13COLOR IGAME RTX 3060 8GB WHITE TRIFAN.png">
+                        <h4>COLOR IGAME RTX 3060 8GB WHITE TRIFAN</h4>
+                        <h3>₱18,000.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/graphicscard/14galax4060.png">
+                        <h4>GALAX RTX 4060 1CLICK PC 8GB GDDR6</h4>
+                        <h3>₱27,500.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/graphicscard/15galax4060ti.jpg">
+                        <h4>GALAX RTX 4060TI 1CLICK PC 8GB GDDR6</h4>
+                        <h3>₱27,500.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/graphicscard/6aerosrx6900.png">
+                        <h4>AORUS RX 6900XT 16GB WATERFORCE</h4>
+                        <h3>₱29,999.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/graphicscard/amd.png">
+                        <h4>AMD RADEON RX 7800XT 16GB HELLHOUND</h4>
+                        <h3>₱33,000.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img
+                            src="images/computerparts/graphicscard/8OCPC RTX 3070 Extreme Edition 8GB GDDR6 256Bit.png">
+                        <h4>OCPC RTX 3070 Extreme Edition 8GB GDDR6 256Bit</h4>
+                        <h3>₱33,000.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/graphicscard/9a407Ti_EXG_W_accessorie.png">
+                        <h4>GALAX GF BLACK/ WHITE RTX 4070 EX GAMER PCIE -12GB</h4>
+                        <h3>₱38,000.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/graphicscard/10galax4070.jpg">
+                        <h4>GALAX NVIDIA RTX 4070 12GB SUPER</h4>
+                        <h3>₱40,000.00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="processors" class="category">
+                <h2>CPU</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD PROCE/2505503-ryzen-5-5600x.avif">
+                        <h4>AMD Ryzen 5 3600 AMD BOX WITH WRAITH STEALTH COOLER</h4>
+                        <h3>₱4,500.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD PROCE/ryzen3.webp">
+                        <h4>AMD RYZEN 3 3200G</h4>
+                        <h3>₱5,999.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD PROCE/2505503-ryzen-5-5600x.avif">
+                        <h4>AMD RYZEN 5 4600G</h4>
+                        <h3>₱5,999.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD PROCE/2505503-ryzen-5-5600x.avif">
+                        <h4>AMD Ryzen 5 5500(OVATION BOX)</h4>
+                        <h3>₱7,499.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD PROCE/2505503-ryzen-7-5800x.avif">
+                        <h4>AMD Ryzen 7 3700X(OVATION BOX)</h4>
+                        <h3>₱7,499.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD PROCE/2505503-ryzen-5-5600x.avif">
+                        <h4>AMD Ryzen 5 5600G(OVATION BOX)</h4>
+                        <h3>₱7,999.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD PROCE/2505503-ryzen-5-5600x.avif">
+                        <h4>AMD Ryzen 5 5600X(OVATION BOX) WITH COOLER</h4>
+                        <h3>₱8,999.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD PROCE/2505503-ryzen-7-7700.avif">
+                        <h4>AMD Ryzen 7 4750G(OVATION BOX)</h4>
+                        <h3>₱10,000.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD PROCE/2505503-ryzen-7-5800x.avif">
+                        <h4>AMD Ryzen 7 5700X(OVATION BOX)</h4>
+                        <h3>₱10,000.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD PROCE/2505503-ryzen-7-7700.avif">
+                        <h4>AMD Ryzen 7 5700G(OVATION BOX)</h4>
+                        <h3>₱10,500.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD PROCE/2505503-ryzen-7-7700.avif">
+                        <h4>AMD Ryzen 7 7700 AM5</h4>
+                        <h3>₱13,999.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD PROCE/2505503-ryzen-7-5800x.avif">
+                        <h4>AMD RYZEN 7 5800X</h4>
+                        <h3>₱14,800.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD PROCE/2505503-ryzen-7-7700.avif">
+                        <h4>AMD Ryzen 7 7800X3D</h4>
+                        <h3>₱22,350.00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Motherboard" class="category">
+                <h2>Motherboard</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD MOBO/EMX-B450M-PRO_1-1.png">
+                        <h4>EMAXX B450M PRO</h4>
+                        <h3>₱3,500.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD MOBO/b450 ds3h.png">
+                        <h4>GIGABYTE B450M V2 DS3H</h4>
+                        <h3>₱5,000.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD MOBO/msi pro h610m-e.png">
+                        <h4>MSI PRO H610M-E DDR4</h4>
+                        <h3>₱5,200.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD MOBO/asus prime b550mk.png">
+                        <h4>ASUS PRIME B550M-K</h4>
+                        <h3>₱6,000.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD MOBO/B550M Pro4(M1).png">
+                        <h4>ASROCK B550M PRO 4</h4>
+                        <h3>₱6,500.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD MOBO/B550M Pro SE(M1).png">
+                        <h4>ASROCK B550M PRO SE</h4>
+                        <h3>₱6,500.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD MOBO/GIGABYTE AORUS ELITE B550M.png">
+                        <h4>AORUS B550M ELITE</h4>
+                        <h3>₱6,500.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD MOBO/msi pro vdh b550.png">
+                        <h4>MSI PRO VDH WIFI B550M</h4>
+                        <h3>₱6,500.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD MOBO/asus prime b760m-k.png">
+                        <h4>PRIME B760M-K</h4>
+                        <h3>₱7,200.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD MOBO/gigabyte b760m ds3h.png">
+                        <h4>GIGABYTE B760M DS3H 1700 SOCKET DDR4</h4>
+                        <h3>₱7,500.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD MOBO/B550 Pro4(M1).png">
+                        <h4>ASROCK B550 ATX PRO 4</h4>
+                        <h3>₱8,900.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD MOBO/gigabyte b760m ds3h ax ddr4.png">
+                        <h4>GIGABYTE B760M DS3H 1700 SOCKET DDR4 AX</h4>
+                        <h3>₱10,220.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD MOBO/B550 Steel Legend(M1).png">
+                        <h4>ASROCK B550 ATX STEEL LEGEND</h4>
+                        <h3>₱11,000.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/AMD MOBO/asus rog strix b760-g.png">
+                        <h4>ROG STRIX B760-G GAMING WIFI</h4>
+                        <h3>₱13,900.00</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="ssd" class="category">
+                <h2>SSD</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/.jpg">
+                        <h4>120GB SATA STORM 2.5</h4>
+                        <h3>₱1,200</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/SPSSD.jpg">
+                        <h4>SILICON POWER 256GB M.2 2280 GEN3X4</h4>
+                        <h3>₱1,099</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/APACER512GB.jpg">
+                        <h4>APACER SATA III 512GB 2.5 SSD</h4>
+                        <h3>₱1,800</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/.jpg">
+                        <h4>CRUCIAL 500GB P3 PLUS GEN 4 NVME</h4>
+                        <h3>₱2,499</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/.jpg">
+                        <h4>APACER 1TB SSD SATA</h4>
+                        <h3>₱3,500</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/APACERNVMEM.2.jpg">
+                        <h4>APACER 1TB M.2 NVME</h4>
+                        <h3>₱4,000</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/.jpg">
+                        <h4>PNY CS2241 500GB SSD NVME GEN 4X4 M.2 NVME</h4>
+                        <h3>₱2,800</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/SAMSUNG250GB.webp">
+                        <h4>SAMSUNG EVO 250GB SSD SATA</h4>
+                        <h3>₱3,500</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/.webp">
+                        <h4>CRUCIAL 1TB P3 M.2 NVME GEN 4</h4>
+                        <h3>₱3,500</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/.webp">
+                        <h4>SAMSUNG 1TB 980 EVO M.2 NVME</h4>
+                        <h3>₱6,600</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/.webp">
+                        <h4>APACER 256 SATA III 2.5</h4>
+                        <h3>₱1,600</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/LEXAR1TBSSD.png">
+                        <h4>LEXAR NM610 1TB M.2 NVME SSD</h4>
+                        <h3>₱3,800</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/.png">
+                        <h4>LEXAR NM610 PRO 500GB M2 NVME SSD</h4>
+                        <h3>₱3,000</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hdd" class="category">
+                <h2>HDD</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/500GB.webp">
+                        <h4>500GB WD BLUE DESKTOP</h4>
+                        <h3>₱1,200</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/1TB.jpg">
+                        <h4>1TB SEAGATE BARRACUDA DESKTOP</h4>
+                        <h3>₱2,500</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/2TB.jpg">
+                        <h4>2TB SEAGATE DESKTOP</h4>
+                        <h3>₱3,500</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="ram" class="category">
+                <h2>RAM</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/computerparts/RAM/apacer.png">
+                        <h4>APACER PANTHER GOLDEN 8gb 3200MHZ</h4>
+                        <h3>₱1,250.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/RAM/9.png">
+                        <h4>8GB PATRIOT SL SIG PREMIUM DDR4 3200MHZ</h4>
+                        <h3>₱1,350.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/RAM/nox.png">
+                        <h4>APACER NOX  8GB 3200MHZ  BLACK</h4>
+                        <h3>₱1,499.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/RAM/3.png">
+                        <h4>GSKILL RIPJAWS 8gb 3200MHZ</h4>
+                        <h3>₱1,850.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/RAM/7.png">
+                        <h4>APACER PANTHER GOLDEN 16GB 8X2 3200MHZ</h4>
+                        <h3>₱2,700.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/RAM/1.png">
+                        <h4>APACER NOX 16GB 8X2GB 3200MHZ BLACK</h4>
+                        <h3>₱2,999.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/RAM/2.png">
+                        <h4>APACER NOX 16GB 8X2GB 3200MHZ WHITE</h4>
+                        <h3>₱2,999.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/RAM/3.png">
+                        <h4>GSKILL RIPJAWS V 32GB 16X2 3600mhz</h4>
+                        <h3>₱3,800.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/RAM/apacer.png">
+                        <h4>APACER PANTHER GOLDEN 32GB 16X2 3200MHZ</h4>
+                        <h3>₱4,500.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/RAM/4.png">
+                        <h4>TEAMGROUP XTREEM ARGB 8GBX2 4000MHZ</h4>
+                        <h3>₱5,999.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/RAM/6.png">
+                        <h4>GSKILL TRIDENT Z ROYAL 8X2 16GB 3600MHZ </h4>
+                        <h3>₱6,499.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/RAM/8.png">
+                        <h4>TFORCE DELTA DDR5 2X16GB 32GB 5600MHZ BLACK</h4>
+                        <h3>₱6,800.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/RAM/5.png">
+                        <h4>GSKILL TRIDENT Z NEO RGB 64GB 32GB X2 3600MHZ</h4>
+                        <h3>₱8,999.00</h3>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="powersupply" class="category">
+                <h2>POWER SUPPLY</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/computerparts/POWER SUPPLY/YGT 750W.png">
+                        <h4>YGT KY-750 ATX PLUS II SEMI TRUE RATED PSU</h4>
+                        <h3>₱750.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/POWER SUPPLY/ACER POWERSUPPLY.png">
+                        <h4>ACER AC 650 BRONZE FULLY MODULAR</h4>
+                        <h3>₱2,300</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/POWER SUPPLY/SILVERSTONE 700W.png">
+                        <h4>SILVERSTONE ST70FES230 700W 80+</h4>
+                        <h3>₱3,000</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/POWER SUPPLY/XIGMATEK 600W.png">
+                        <h4>XIGMATEC X-POWER  600W 80+ </h4>
+                        <h3>₱3,000</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/POWER SUPPLY/GAMDIAS HELIOS 850W.png">
+                        <h4>GAMDIAS HELIOS M1-850 BRONZE POWER SUPPLY</h4>
+                        <h3>₱4,000</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/POWER SUPPLY/HYDROM PRO 800W.png">
+                        <h4>FSP HYDRO M 800w 80+ BRONZE SEMI MODULAR</h4>
+                        <h3>₱4,000</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/POWER SUPPLY/image-removebg-preview.png">
+                        <h4>COOLER MASTER G700 700W 80+ GOLD</h4>
+                        <h3>₱5,000</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/POWER SUPPLY/ACER 1000W FULLY MOD.png">
+                        <h4>ACER AC 1000 GOLD 80+ FULLY MODULAR</h4>
+                        <h3>₱5,000</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/POWER SUPPLY/HYDRO G PRO 1000W.png">
+                        <h4>FSP HYDRO G PRO 1000W FULL MODULAR 80+</h4>
+                        <h3>₱8,999</h3>
+                    </div> 
+                </div>
+            </div>
+
+            <div id="casing" class="category">
+                <h2>CASING</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/computerparts/CASING/ygt.png">
+                        <h4>YGT K003 PC CASE</h4>
+                        <h3>₱750.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CASING/ovation.png">
+                        <h4>OVATION BATTLESTAR BLACK/WHITE CASE</h4>
+                        <h3>₱1,030.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CASING/OVATION HYPERGATE MESH 5.0.png">
+                        <h4>OVATION HYPERGATE MESH 5.0 BLACK</h4>
+                        <h3>₱1,500.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CASING/GUNDAM G3 CASE.png">
+                        <h4>GUNDAM CASE G3</h4>
+                        <h3>₱1,900.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CASING/ACER_V920_BLACK.png">
+                        <h4>ACER V920 BLACK MATX</h4>
+                        <h3>₱2,099.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CASING/ACER_V920_WHITE.png">
+                        <h4>ACER V920 WHITE MATX</h4>
+                        <h3>₱2,199.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CASING/hyper1.png">
+                        <h4>OVATION HYPERGATE 6.0 BLACK</h4>
+                        <h3>₱2,500.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CASING/GAMDIAS_TALOS_E3_BLACK-removebg-preview.png">
+                        <h4>GAMDIAS GAMING CASE TALOS E3 BLACK</h4>
+                        <h3>₱2,800.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CASING/GAMDIAS_TALOS_E3_WHITE-removebg-preview.png">
+                        <h4>GAMDIAS GAMING CASE TALOS E3 WHITE</h4>
+                        <h3>₱2,900.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CASING/GALAX REV 01.png">
+                        <h4>GALAX REVOLUTION 05</h4>
+                        <h3>₱3,000.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CASING/ACER_V950_WHITE.png">
+                        <h4>ACER V950 CASE BLACK</h4>
+                        <h3>₱3,299.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CASING/ACER_V950.png">
+                        <h4>ACER V950 CASE WHITE</h4>
+                        <h3>₱3,399.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CASING/NZXT H5 FLOW BLACK.png">
+                        <h4>NZXT H5 FLOW</h4>
+                        <h3>₱6,800.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CASING/ASUS TUF GT502 BLACK.png">
+                        <h4>ASUS TUF GT502 BLACK</h4>
+                        <h3>₱9,500.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CASING/ASUS TUF GT502 WHITE.png">
+                        <h4>ASUS TUF GT502 WHITE</h4>
+                        <h3>₱9,500.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CASING/NZXT H9 FLOW.png">
+                        <h4>NZXT H9 Flow Dual-Chamber Mid-Tower Airflow Case</h4>
+                        <h3>₱10,000.00</h3>
+                    </div>
+                    
+                    <div class="col-4">
+                        <img src="images/computerparts/CASING/nesop1.png">
+                        <h4>GAMDIAS NESO P1 BLACK /WHITE</h4>
+                        <h3>₱11,500.00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cpuCoolers" class="category">
+                <h2>CPU COOLER</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/computerparts/CPU COOLER/DEEPCOOL AK400.png">
+                        <h4>DEEP COOL AK400</h4>
+                        <h3>₱1,600</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CPU COOLER/DEEPCOOL AG400 PLUS.png">
+                        <h4>DEEPCOOL AG400 PLUS DUAL FAN </h4>
+                        <h3>₱1,600</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CPU COOLER/DEEPCOOL AK500S DIGITAL.png">
+                        <h4>DEEPCOOL AK500s DIGITAL BLACK</h4>
+                        <h3>₱2,850</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CPU COOLER/DEEPCOOL AK500S DIGITAL WHITE.png">
+                        <h4>DEEPCOOL AK500s DIGITAL WHITE</h4>
+                        <h3>₱3,150</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CPU COOLER/DEEPCOOL AK620S DIGITAL BLACK.png">
+                        <h4>AK 620 COOLER DUAL PROCESSOR FAN BLACK</h4>
+                        <h3>₱3,350</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CPU COOLER/DEEPCOOL AK620S DIGITAL WHITE.png">
+                        <h4>AK 620 COOLER DUAL PROCESSOR FAN BLACK</h4>
+                        <h3>₱3,350</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CPU COOLER/DEEPCOOL LE520 240MM.png">
+                        <h4>DEEPCOOL LE520 240MM AIO COOLER</h4>
+                        <h3>₱3,800</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CPU COOLER/1ST PLAYER MOTHRA MT240 WHITE.png">
+                        <h4>1stplayer Mothra MT240 RGB AIO Liquid White CPU Cooler</h4>
+                        <h3>₱3,799</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/CPU COOLER/NZXT Kraken Elite 360 RGB AIO Cooler.png">
+                        <h4>Kraken Elite 360 RGB WHITE</h4>
+                        <h3>₱17,999</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div id="fan" class="category">
+                <h2>FAN</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/computerparts/apacerram.jpg">
+                        <h4>LUNAR SET</h4>
+                        <h3>₱23,000</h3>
+                    </div>
+                </div>
+            </div> -->
+
+ 
+
+        </div>
+    </div>
+
+    <!-------------- footer -------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="images/computerparts/LOGO/1.png">
+                </div>
+                <div class="footer-col-2">
+                    <h3>FOLLOW US</h3>
+                    <ul>
+                        <li>FACEBOOK</li>
+                        <li>GMAIL</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>STRICTLY</h3>
+                    <ul>
+                        <li>No Box,</li>
+                        <li>No Receipt,</li>
+                        <li>No Warranty.</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <hr>
+            <h3 class="pcbyte">PC BYTE COMPUTER PARTS AND ACCESSORIES</h3>
+        </div>
+    </div>
+    <!--------------------------- js for toggle menu --------------------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

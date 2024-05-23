@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - PC Byte Computer Parts and Accessories</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+        function showCategory(category) {
+            var categories = document.getElementsByClassName('category');
+            for (var i = 0; i < categories.length; i++) {
+                categories[i].style.display = 'none';
+            }
+            document.getElementById(category).style.display = 'table-row-group';
+        }
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+    </script>
+    <style>
+        .parts {
+            padding: 10px 10px;
+            margin: 0 auto 0 150px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            flex: 1 1 50%;
+            max-width: calc(50% - 10px);
+        }
+
+        .select-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+          <a href="index.html" class="logo">
+            <img src="images/computerparts/LOGO/7.png" alt="Logo" width="220px" />
+          </a>
+          <nav>
+            <ul class="menu__box" id="MenuItems">
+                <li><a class="menu__item" href="categorieslaptops.html">LAPTOPS</a></li>
+              <li><a class="menu__item" href="categoriespcparts.html">PC PARTS</a></li>
+              <li><a class="menu__item" href="categoriesperipherals.html">PERIPHERALS</a></li>
+              <li><a class="menu__item" href="categoriesaccessoriesandothers.html">ACCESSORIES AND OTHERS</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="Bottom_menu">
+        <a class="menu__item" href="categoriespcparts.html"><img src="images/categories/pcparticon.png" />PC PARTS</a>
+        <a class="menu__item" href="categoriesperipherals.html"><img src="images/categories/peripherals.png" />PERIPHERALS</a>
+        <a href="index.html"><img src="images/home.png" />Home</a>
+        <a class="menu__item" href="categorieslaptops.html"><img src="images/categories/laptop image.png" />LAPTOPS</a>
+        <a class="menu__item" href="categoriesaccessoriesandothers.html"><img src="images/categories/router.png" />ACCESSORIES AND OTHERS</a>
+      </div>
+
+    <div class="select-wrapper">
+        <select id="category-select" onchange="showCategory(this.value)" class="parts">
+            <option value=""></option>
+            <option value="monitor">MONITOR</option>
+            <option value="mouse">MOUSE</option>
+            <option value="keyboard">KEYBOARD</option>
+            <option value="keyboardnmouse">KEYBOARD and MOUSE</option>
+            <option value="headset">HEADSET</option>
+            <option value="gamingchair">GAMING CHAIR</option>
+        </select>
+    </div>
+
+    
+
+
+
+    <div class="big-container">
+        <div class="small-container"><br>
+            <H1>PERIPHERALS</H1><br>
+
+            <div id="monitor" class="category">
+                <h2>MONITOR</h2>
+                <!-- <div class="small-container">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="images/GAMDIAS MONITOR/gamdiasfront.png" width="100%" id="ProductImg">
+            
+                            <div class="small-img-row">
+                                <div class="small-img-col">
+                                    <img src="images/GAMDIAS MONITOR/gamdiasside.png" width="100%" class="small-img">
+                                </div>
+                                <div class="small-img-col">
+                                    <img src="images/GAMDIAS MONITOR/gamdiasinch.png" width="100%" class="small-img">
+                                </div>
+                                <div class="small-img-col">
+                                    <img src="images/GAMDIAS MONITOR/gamdiasback.png" width="100%" class="small-img">
+                                </div>
+                                <div class="small-img-col">
+                                    <img src="images/GAMDIAS MONITOR/gamdiasdisplayport.png" width="100%" class="small-img">
+                                </div>
+                            </div>
+            
+                        </div>
+                        <div class="col-2">
+                            <p>Home / MONITOR </p>
+                            <h1>GAMDIAS</h1>
+                            <h4>₱6,500</h4>
+                            <br>
+                            <h3>Product Details</h3>
+                            <p>specs</p>
+                        </div>
+                    </div>
+                </div> -->
+                <br><br>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/computerparts/MONITOR/SAMSUNG 24.png">
+                        <h4>24" Odyssey G3 Full HD G32A 165Hz Gaming Monitor</h4>
+                        <h3>₱9,000.00</h3>
+                    </div>
+                    
+                    <div class="col-4">
+                        <img src="images/computerparts/MONITOR/VENUS 27 INCH.png">
+                        <h4>GAMDIAS VENUS HD27IFW IPS 165HZ</h4>
+                        <h3>₱7,999.00</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/MONITOR/SAMSUNG G3 27.png">
+                        <h4>27" Odyssey G3 Full HD G32A 165Hz Gaming Monitor</h4>
+                        <h3>₱11,999.00</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/MONITOR/SAMSUNG G5 32INCH.png">
+                        <h4>32" Odyssey G5 G50A QHD 165Hz Gaming Monitor</h4>
+                        <h3>₱20,999.00</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/MONITOR/GAMDIAS 32 ATLAS Q32VC VA.webp">
+                        <h4>GAMDIAS 32" ATLAS Q32VC VA 1440P 165HZ</h4>
+                        <h3>₱14,499.00</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/MONITOR/HD27H GAMDIAS.png">
+                        <h4>Gamdias Atlas HD27H 27" Curve 240Hz VA Panel 1920x1080</h4>
+                        <h3>₱9,799.00</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/MONITOR/HD24CIC GAMDIAS.png">
+                        <h4>GAMDIAS ATLAS HD24CIC 180HZ VA</h4>
+                        <h3>₱6,700.00</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/MONITOR/HD27G.png">
+                        <h4>GAMDIAS ATLAS HD27G 165HZ</h4>
+                        <h3>₱8,999.00</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/MONITOR/GPG-23-MON-VA2215-mh-PRDP_F01_pc_m.png">
+                        <h4>ViewSonic VA2215-H 22</h4>
+                        <h3>₱4,499.00</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/MONITOR/prisma - 02.png">
+                        <h4>GALAX 27INCH PR-02 GSYNC </h4>
+                        <h3>₱8,000.00</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/MONITOR/vivance -02.png">
+                        <h4>GALAX VIVANCE 02</h4>
+                        <h3>₱9,499.00</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/MONITOR/vh25f.png">
+                        <h4>GAMDIAS ATLAS VH25F TN 165HZ</h4>
+                        <h3>₱5,500.00</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/MONITOR/VENUS 24 INCH.png">
+                        <h4>GAMDIAS VENUS HD24IF IPS 165HZ</h4>
+                        <h3>₱6,800.00</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/MONITOR/SAMSUNG G7 32 INCHES 4K RESOLUTION.webp">
+                        <h4>""" 	SAMSUNG G7 32 INCHES 4K RESOLUTION"""</h4>
+                        <h3>₱33,000.00</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/MONITOR/HKC.png">
+                        <h4>HKC MG27H6Q 170HZ 1440P MONITOR</h4>
+                        <h3>₱9,000.00</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/MONITOR/GAMDIAS APOLLO DHD35F (FLAT, ULTRAWIDE ).jpg">
+                        <h4>GAMDIAS APOLLO DHD35F (FLAT, ULTRAWIDE )</h4>
+                        <h3>₱17,800.00</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/MONITOR/19viewsonic.png">
+                        <h4>VIEWSONIC VA1903H 19 INCH</h4>
+                        <h3>₱3,500.00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mouse" class="category">
+                <h2>MOUSE</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/computerparts/upsmousekeybs/GALAX 03 GAMING MOUSE.jpg">
+                        <h4>GALAX 03 GAMING MOUSE</h4>
+                        <h3>₱850.00</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/upsmousekeybs/GALAX 02 GAMING MOUSE.jpg">
+                        <h4>GALAX 02 GAMING MOUSE</h4>
+                        <h3>₱750.00</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/upsmousekeybs/GALAX SLIDER 05 GAMING MOUSE.jpg">
+                        <h4>GALAX SLIDER 05 GAMING MOUSE</h4>
+                        <h3>₱999.00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="keyboard" class="category">
+                <h2>KEYBOARD</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/computerparts/upsmousekeybs/FANTECH K-613L FIGHTER PINK GAMING KEYBOARD.jpg">
+                        <h4>FANTECH K-613L FIGHTER PINK GAMING KEYBOARD</h4>
+                        <h3>₱999.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/upsmousekeybs/ASUS TUF K1 BLACK MEMBRANE.png">
+                        <h4>ASUS TUF K1 BLACK MEMBRANE</h4>
+                        <h3>₱2,500.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/upsmousekeybs/FANTECH ATOM96 MK-890 MECHANICAL BLACKGREY.jpg">
+                        <h4>FANTECH ATOM96 MK-890 MECHANICAL BLACK/GREY</h4>
+                        <h3>₱1,400.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/upsmousekeybs/FANTECH K-614L FIGHTER III BLACK.jpg">
+                        <h4>FANTECH K-614L FIGHTER III BLACK</h4>
+                        <h3>₱800.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/upsmousekeybs/FANTECH MK-855 MASFIT WHITE HOT SWAPABBLE.png">
+                        <h4>FANTECH MK-855 MASFIT WHITE HOT SWAPABBLE</h4>
+                        <h3>₱2,600.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/upsmousekeybs/GALAX KFA2 STEALTH 03 GAMING KEYBOARD.webp">
+                        <h4>GALAX KFA2 STEALTH 03 GAMING KEYBOARD</h4>
+                        <h3>₱1,200.00</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/upsmousekeybs/STEELSERIES RED APEX 7 MECHANICAL KEYBOARD.webp">
+                        <h4>STEELSERIES RED APEX 7 MECHANICAL KEYBOARD</h4>
+                        <h3>₱8,500.00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="keyboardnmouse" class="category">
+                <h2>KEYBOARD AND MOUSE</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/computerparts/upsmousekeybs/KEYBOARD MOUSE STX 380 BUNDLE.jpg">
+                        <h4>KEYBOARD MOUSE STX 380 BUNDLE </h4>
+                        <h3>₱500.00</h3>
+                    </div>
+                    
+                    <div class="col-4">
+                        <img src="images/computerparts/upsmousekeybs/A4TECH KEYBOARD MOUSE BUNDLE.jpg">
+                        <h4>A4TECH KEYBOARD MOUSE BUNDLE</h4>
+                        <h3>₱650.00</h3>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/upsmousekeybs/FANTECH MAJOR KX-302S.png">
+                        <h4>FANTECH MAJOR KX-302S</h4>
+                        <h3>₱1,100.00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="headset" class="category">
+                <h2>HEADSET</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/computerparts/upsmousekeybs/FANTECH HG-11 CAPTIAN PINK 7.1.png">
+                        <h4>FANTECH HG-11 CAPTIAN PINK 7.1</h4>
+                        <p>₱1,600.00</p>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/upsmousekeybs/FANTECH HG-11 CAPTIAN WHITE 7.1.png">
+                        <h4>FANTECH HG-11 CAPTIAN WHITE 7.1</h4>
+                        <p>₱1,400.00</p>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/upsmousekeybs/FANTECH HG-15 CAPTAIN FANTECH.jpg">
+                        <h4>FANTECH HG-15 CAPTAIN FANTECH</h4>
+                        <p>₱1,200.00</p>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/upsmousekeybs/GAMDIAS EROS E3.png">
+                        <h4>GAMDIAS EROS E3</h4>
+                        <p>₱999.00</p>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/upsmousekeybs/FANTECH HG-20 CHIEF II PINK HEADSET.png">
+                        <h4>FANTECH HG-20 CHIEF II PINK HEADSET</h4>
+                        <p>₱999.00</p>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/upsmousekeybs/GALAX SONAR 0304 7.1 HEADSET.png">
+                        <h4>GALAX SONAR 03/04 7.1 HEADSET</h4>
+                        <p>₱1,000.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gamingchair" class="category">
+                <h2>GAMING CHAIR</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/computerparts/gaming chair/PANTHER NIGHTFALL WHITE PINK NYLON FOOTING LEATHER - NYLON FOOTING.jpg">
+                        <h4>PANTHER NIGHTFALL WHITE PINK NYLON FOOTING LEATHER - NYLON FOOTING</h4>
+                        <p>₱2,990.00</p>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/gaming chair/INPLAY FOX F5 WHITE-GREY.jpg">
+                        <h4>INPLAY FOX F5 WHITE-GREY</h4>
+                        <p>₱3,700.00</p>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="images/computerparts/gaming chair/INPLAY FOX F5 BLACK-GREY.jpg">
+                        <h4>INPLAY FOX F5 BLACK-GREY</h4>
+                        <p>₱3,700.00</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-------------- footer -------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="images/computerparts/LOGO/1.png">
+                </div>
+                <div class="footer-col-2">
+                    <h3>FOLLOW US</h3>
+                    <ul>
+                        <li>FACEBOOK</li>
+                        <li>GMAIL</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>STRICTLY</h3>
+                    <ul>
+                        <li>No Box,</li>
+                        <li>No Receipt,</li>
+                        <li>No Warranty.</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <hr>
+            <p class="pcbyte">PC BYTE COMPUTER PARTS AND ACCESSORIES</p>
+        </div>
+    </div>
+    <!--------------------------- js for toggle menu --------------------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+            SmallImg[0].onclick = function()
+            {
+                ProductImg.src = SmallImg[0].src;
+            }
+            SmallImg[1].onclick = function()
+            {
+                ProductImg.src = SmallImg[1].src;
+            }
+            SmallImg[2].onclick = function()
+            {
+                ProductImg.src = SmallImg[2].src;
+            }
+            SmallImg[3].onclick = function()
+            {
+                ProductImg.src = SmallImg[3].src;
+            }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="addtocart/addtocart.css">
+    <title>Add to Cart</title>
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="index.html" class="logo">
+            <img class="responsive-img" src="images/computerparts/LOGO/7.png" alt="Logo" width="250px">
+        </a>
+
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="">ACCOUNT</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+    <div class="Bottom_menu">
+        <a href="index.html"><img src="images/contact-mail.png">Contact Us</a>
+        <a href="PCBYTEPRICELISTaccessories.html"><img src="images/computericon.png">pricelist</a>
+        <a href="index.html"><img src="images/home.png">Home</a>
+        <a href="addtocart.html"><img src="images/aibuild.png">PC Builder</a>
+        <a href="#print"><img src="images/printing.png">PRINT</a>
+</div>
+
+    <div class="header">
+        <p class="logo">PCBYTE</p>
+        <div class="cart"><i class="fa-solid fa-cart-shopping"></i>
+            <p id="count">0</p>
+        </div>
+    </div>
+    <div id="printContent"></div>
+    <div class="container">
+        <div id="root"></div>
+        <div class="sidebar" id="items">
+            <section id="print">
+            <div class="head">
+                <p>My Cart</p>
+            </div>
+        </section>
+            <div id="cartItem">Your cart is empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">₱ 0.00</h2>
+
+            </div>
+            <button id="printer" onclick="printSpecificPart()">Print</button>
+        </div>
+    </div>
+    </div>
+    <script>
+        function printSpecificPart() {
+            var printWindow = window.open('', '_blank');
+            var itemsHTML = cart.map((item) => {
+                return `
+                        <tr>
+                            <td><img class="item-image" src="${item.image}" alt="${item.title}"></td>
+                            <td class="item-details">
+                                <p class="item-title">${item.title}</p>
+                                <p>${item.desc}</p>   
+                            </td>
+                            <td class="item-details">
+                                <p class="item-price">₱ ${item.price}.00</p>
+                            </td>
+                        </tr>
+                    `;
+            }).join('');
+
+            var total = cart.reduce((acc, item) => acc + item.price, 0);
+
+            var printContent = `
+                    <style>
+                        .item-image {
+                            max-width: 200px;
+                            max-height: 200px;
+                        }
+                        .item-details {
+                            padding-left: 20px;
+                        }
+                        .item-title {
+                            font-weight: bold;
+                            margin-bottom: 5px;
+                        }
+                        .total {
+                            margin-top: 20px;
+                            font-weight: bold;
+                            text-align: right;
+                        }
+                        table {
+                            border-collapse: collapse; /* Collapse table borders */
+                            width: 100%; /* Set table width to 100% */
+                        }
+                        th, td {
+                            border: 1px solid #ccc; /* Border style */
+                            padding: 8px;
+                            text-align: center;
+                        }
+                        th {
+                            background-color: #f2f2f2; /* Header background color */
+                        }
+                    </style>
+                    <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                    </tr>
+                    ${itemsHTML}
+                    </table>
+                    <div class="total">Total: ₱ ${total}.00</div>
+                `;
+
+            printWindow.document.write(printContent);
+            printWindow.document.close();
+            printWindow.print();
+        }
+        document.getElementById("gpu").addEventListener("click", function () {
+            window.location.href = "images/addtocart/gpu.js";
+        });
+    </script>
+
+    <script src="addtocart/addtocart.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0 1.8rem 0;
+}
+
+.MainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ----------------------__-------------------------- */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: space-between; /* Added to evenly distribute elements */
+    padding: 10px 95px; /* Added padding for better spacing */
+    background-color: whitesmoke; /* Added background color for better visibility */
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 12px;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #554;
+}
+
+p {
+    color: #554;
+}
+
+.my-button {
+    border-radius: 30px;
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+#MenuItems {
+    display: none;
+}
+
+.Bottom_menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.Bottom_menu a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+}
+
+.Bottom_menu img{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    nav {
+        display: block; /* Show navigation for larger screens */
+    }
+    nav ul li {
+        width: auto; /* Reset width for larger screens */
+    }
+}
+
+.menu-btn1 {
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    margin-right: 460px;
+}
+
+
+
+/* ---------------------------------- - ------------------------- */
+
+.header{
+    height: 80px;
+    width: 81%;
+    background-color: crimson;
+    border-radius: 3px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.header .logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.cart{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+.fa-solid{
+    color: crimson;
+}
+.cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: crimson;
+    color: white;
+}
+.container{
+    align-content: baseline;
+    width: 80%;
+
+}
+#root{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, .5fr);
+    grid-gap: 5px;
+
+}
+.sidebar{
+    width: 75%;
+
+}
+.head{
+    background-color: crimson;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    padding: 15px;
+}
+.img-box{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    max-width: 80%;
+    max-height: 70%;
+    object-fit: cover;
+    object-position: center;
+}
+.bottom{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+}
+h2{
+    font-size: 20px;
+    color: black;
+}
+button{
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: crimson;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+button:hover{
+    background-color: #333;
+}
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+.row-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 1px solid crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rowimg{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+.fa-trash:hover{
+    cursor: pointer;
+    color: #333;
+}
+#printer{
+    padding: 5px 10px;
+    font-size: 25px;
+    width: 25%;
+    height: auto;
+    margin-left: 20px;   
+}
+
+.row1 {
+    justify-content: space-between;
+    gap:  10px;
+    display: flex;
+    width: 100%;
+    margin: 0 100px 0 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+}
+.col-md-2 button {
+    height: 100px;
+    width: 128px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(205, 205, 205);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    gap: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.col-md-2 button:hover {
+    background-color: #5fcaff;
+}
+
+.col-md-2 img {
+    max-width: 40px;
+    height: auto;
+}
+
+

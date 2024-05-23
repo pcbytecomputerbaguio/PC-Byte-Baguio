@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>PCBYTE PRICELIST</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f1f1f1;
+      }
+      h1 {
+        text-align: center;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 50px;
+        border: thin;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 3px solid #ddd;
+      }
+      th {
+        background-color: #f9f9f9;
+        font-weight: bold;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      select {
+        margin-top: 20px;
+        padding: 5px;
+      }
+      button {
+        background-color: #4caf50; /* Green */
+        border-radius: 20px;
+        color: white;
+        padding: 8px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border: none;
+      }
+      .container {
+        height: 100px;
+        position: relative;
+        border: none;
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+      }
+
+      .Bottom_menu {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 20px;
+        position: relative;
+        margin: 10px 10px 10px 10px;
+      }
+
+      .Bottom_menu a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        color: #000;
+      }
+
+      .Bottom_menu img {
+        width: 40px;
+        height: 40px;
+      }
+    </style>
+    <script>
+      function showCategory(category) {
+        var categories = document.getElementsByClassName("category");
+        for (var i = 0; i < categories.length; i++) {
+          categories[i].style.display = "none";
+        }
+        document.getElementById(category).style.display = "table-row-group";
+      }
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+    </script>
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html" class="logo">
+          <img src="images/computerparts/LOGO/7.png" alt="Logo" width="220px" />
+        </a>
+      </div>
+    </div>
+    <br /><br /><br />
+
+    <div class="Bottom_menu">
+      <a href="#contact"><img src="images/contact-mail.png" />Contact Us</a>
+      <a href="PRICELISTPCBYTE.html"><img src="images/computericon.png" />pricelist</a>
+      <a href="index.html"><img src="images/home.png" />Home</a>
+      <a href="addtocart.html"><img src="images/aibuild.png" />PC Builder</a>
+      <a href=""><img src="images/user.png" />Account</a>
+    </div>
+
+
+<!--------------------------------------  ---------------------------------------->
+
+    <h1>COMPUTER PARTS AND ACCESSORIES PRICE LIST</h1>
+    <label for="category-select">Select a Category:</label>
+    <select id="category-select" onchange="showCategory(this.value)">
+      <option value="cables">CABLES</option>
+      <option value="gamingcontroller">GAMING CONTROLLER</option>
+      <option value="headset">HEADSET</option>
+      <option value="keyboard">KEYBOARDS</option>
+      <option value="keyboardbundle">KEYBOARD+MOUSE BUNDLES</option>
+      <option value="misc">LAPTOP MISC</option>
+      <option value="mouse">MOUSE</option>
+      <option value="speaker">SPEAKER</option>
+      <option value="webcam">WEBCAMS</option>
+      <option value="wirelessdongle">WIRELESS DONGLE</option>
+    </select>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Manufacturer</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Warranty</th>
+        </tr>
+      </thead>
+      <tbody id="cables" class="category">
+        <tr>
+          <td>CABLE</td>
+          <td>INTELLIGIENT</td>
+          <td>ORIGINAL VGA CABLE 1.5M</td>
+          <td>₱150</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>CABLE</td>
+          <td>INTELLIGIENT</td>
+          <td>HDMI CABLE HIGH END 1.5M</td>
+          <td>₱250</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>CABLE</td>
+          <td>INTELLIGIENT</td>
+          <td>HDMI TO DVI CABLE 1.5M</td>
+          <td>₱300</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>CABLE</td>
+          <td>INTELLIGIENT</td>
+          <td>CAT5E 100 METERS ORDINARY GREY</td>
+          <td>₱900</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>CABLE</td>
+          <td>INTELLIGIENT</td>
+          <td>CAT5E 305 METERS ORDINARY GREY</td>
+          <td>₱1,650</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>CABLE</td>
+          <td>INTELLIGIENT</td>
+          <td>CAT 6 ORDINARY INDOOR BLUE 305 METERS</td>
+          <td>₱2,500</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>CABLE</td>
+          <td>INTELLIGIENT</td>
+          <td>CAT 6 OUTDOOR BLACK 305 METERS</td>
+          <td>₱3,500</td>
+          <td>N/A</td>
+        </tr>
+
+        <!-- Add more rows for more product -->
+      </tbody>
+      <tbody id="gamingcontroller" class="category">
+        <tr>
+          <td>GAMING CONTROLLER</td>
+          <td>FANTECH</td>
+          <td>GP 13 SHOOTER WIRED GAMEPAD</td>
+          <td>₱950</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>GAMING CONTROLLER</td>
+          <td>FANTECH</td>
+          <td>WGP 13 SHOOTER WIRELESS GAMPAD</td>
+          <td>₱1,150</td>
+          <td>N/A</td>
+        </tr>
+
+        <!-- Add more rows for more product -->
+      </tbody>
+      <tbody id="headset" class="category">
+        <tr>
+          <td>HEADSET</td>
+          <td>FANTECH</td>
+          <td>FANTECH HG-11 CAPTAIN PINK 7.1</td>
+          <td>₱1,600</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>HEADSET</td>
+          <td>FANTECH</td>
+          <td>FANTECH HG-11 CAPTAIN WHITE7.1</td>
+          <td>₱1,400</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>HEADSET</td>
+          <td>FANTECH</td>
+          <td>FANTECH HG-15 CAPTAIN BLACK 7.1</td>
+          <td>₱1,200</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>HEADSET</td>
+          <td>GAMDIAS</td>
+          <td>GAMDIAS EROS|E3</td>
+          <td>₱999</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>HEADSET</td>
+          <td>FANTECH</td>
+          <td>FANTECH HG-20 CHIEF II PINK HEADSET</td>
+          <td>₱999</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>HEADSET</td>
+          <td>GALAX</td>
+          <td>GALAX SONAR 03/04 7.1 HEADSET BLACK/WHITE</td>
+          <td>₱1,000</td>
+          <td>N/A</td>
+        </tr>
+
+        <!-- Add more rows for more product -->
+      </tbody>
+      <tbody id="keyboard" class="category">
+        <tr>
+          <td>KEYBOARD</td>
+          <td>FANTECH</td>
+          <td>FANTECH K-613L FIGHTER PINK GAMING KEYBOARD</td>
+          <td>₱999</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>KEYBOARD</td>
+          <td>ASUS TUF</td>
+          <td>ASUS TUF K1 BLACK MEMBRANE</td>
+          <td>₱2,500</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>KEYBOARD</td>
+          <td>FANTECH</td>
+          <td>FANTECH ATOM96 MK-890 MECHANICAL BLACK/GREY</td>
+          <td>₱1,400</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>KEYBOARD</td>
+          <td>FANTECH</td>
+          <td>FANTECH MK-855 MAXFIT WHITE HOT SWAPPABLE</td>
+          <td>₱2,600</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>KEYBOARD</td>
+          <td>GALAX</td>
+          <td>GALAX KFA2 STEALTH 03 GAMING KEYBOARD</td>
+          <td>₱999</td>
+          <td>N/A</td>
+        </tr>
+      </tbody>
+      <tbody id="keyboardbundle" class="category">
+        <tr>
+          <td>KEYBOARD BUNDLE</td>
+          <td>INPLAY</td>
+          <td>INPLAY STX 380 KEYBOARD + MOUSE GAMING BUNDLE</td>
+          <td>₱500</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>KEYBOARD BUNDLE</td>
+          <td>A4TECH</td>
+          <td>A4TECH KK-3330 OFFICE KEYBOARD + MOUSE BUNDLE</td>
+          <td>₱650</td>
+          <td>N/A</td>
+        </tr>
+      </tbody>
+      <tbody id="speaker" class="category">
+        <tr>
+          <td>SPEAKER</td>
+          <td>INPLAY</td>
+          <td>GS 201 HELLSCREAM SPEAKER WHITE</td>
+          <td>₱450</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>SPEAKER</td>
+          <td>F&D</td>
+          <td>F&D V320 SPEAKER BLACK</td>
+          <td>₱650</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>SPEAKER</td>
+          <td>LOGITECH</td>
+          <td>LOGITECH Z213 SUB WOOFER SPEAKER</td>
+          <td>₱1,500</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>SPEAKER</td>
+          <td>F&D</td>
+          <td>F&D A140X 2.1 BLUETOOTH SPEAKER WITH SUBWOOFERS</td>
+          <td>₱2,500</td>
+          <td>N/A</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="container">
+      <div class="center">
+        <a href="PRICELISTPCBYTE.html">
+          <button>PREVIOUS PAGE</button>
+        </a>
+      </div>
+    </div>
+
+    <section id="contact">
+      <div class="contact container">
+        <div>
+          <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://img.icons8.com/bubbles/50/null/apple-phone.png"
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Phone</h1>
+              <a
+                href="tel:0938 465 0322"
+                style="color: blue; text-decoration: underline"
+                >Call us at 0938 465 0322</a
+              >
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://img.icons8.com/bubbles/50/null/apple-mail.png"
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Email</h1>
+              <a
+                href="mailto:pcbytecomputerbaguio@gmail.com"
+                style="color: blue; text-decoration: underline"
+                >pcbytecomputerbaguio@gmail.com</a
+              >
+              <h2></h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://img.icons8.com/bubbles/50/null/order-delivered.png"
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Address</h1>
+              <h4>
+                No. 3 Calderon street,harrison road 2nd floor, Baguio City,
+                Philippines
+              </h4>
+              <p>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.20381248706198!2d120.5970635920289!3d16.41156569111185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a1e0837d4c6b%3A0xba76b439b22f76b1!2sPC%20BYTES%20COMPUTER%20PARTS%20AND%20ACCESSORIES!5e0!3m2!1sen!2sph!4v1710837275519!5m2!1sen!2sph"
+                ></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
