@@ -19,6 +19,8 @@
             document.getElementById("myDropdown").classList.toggle("show");
         }
     </script>
+    <script src="script.js"></script>
+
     <style>
         .parts {
             padding: 10px 10px;
@@ -40,6 +42,22 @@
 
 <body>
 
+    <div class="floating-button" onclick="toggleMessenger()">
+        <img src="chat/chat (3).png" alt="Floating Button" />
+      </div>
+      <div id="messengerBox" class="messenger-box" style="display: none">
+        <h2>Hi Bossing!</h2>
+        <p>Let us know if we can help you with anything at all.</p>
+        <a href="https://web.facebook.com/messages/t/112410887229785" class="facebook">
+            <img src="chat/messenger_1617469.png" alt="Messenger Icon" />
+          <span>Facebook</span>
+        </a>
+        <a href="#" class="closeButton" onclick="closeMessenger()">
+          Close
+        </a>
+      </div>
+      <div id="message" style="display: none"></div>
+
     <div class="container">
         <div class="navbar">
           <a href="index.html" class="logo">
@@ -47,10 +65,10 @@
           </a>
           <nav>
             <ul class="menu__box" id="MenuItems">
-                <li><a class="menu__item" href="categorieslaptops.html">LAPTOPS</a></li>
-              <li><a class="menu__item" href="categoriespcparts.html">PC PARTS</a></li>
-              <li><a class="menu__item" href="categoriesperipherals.html">PERIPHERALS</a></li>
-              <li><a class="menu__item" href="categoriesaccessoriesandothers.html">ACCESSORIES AND OTHERS</a></li>
+                <li><a class="menu__item" href="categorieslaptops.html"><img src="images/categories/laptop image.png" style="width: 30px; height: 30px;">Laptop</a></li>
+                <li><a class="menu__item" href="categoriespcparts.html"><img src="images/categories/pcparticon.png" style="width: 30px; height: 30px;"/>PC Part</a></li>
+                <li><a class="menu__item" href="categoriesperipherals.html"><img src="images/categories/peripherals.png " style="width: 30px; height: 30px;"/>Peripherals</a></li>
+                <li><a class="menu__item" href="categoriesaccessoriesandothers.html"><img src="images/categories/router.png" style="width: 30px; height: 30px;"/>Accessories & Others</a></li>
             </ul>
           </nav>
         </div>
@@ -71,7 +89,6 @@
             <option value="cpuCoolers">CPU COOLER</option>
             <option value="graphics-cards">GPU</option>
             <option value="Motherboard">MOTHERBOARD</option>
-            <option value="fan">FAN</option>
             <option value="powersupply">POWER SUPPLY</option>
             <option value="ram">RAM</option>
             <option value="ssd">SSD</option>
@@ -329,81 +346,69 @@
                 <h2>SSD</h2>
                 <div class="row">
                     <div class="col-4">
-                        <img src="images/computerparts/storage/.jpg">
-                        <h4>120GB SATA STORM 2.5</h4>
-                        <h3>₱1,200</h3>
-                    </div>
-
-                    <div class="col-4">
                         <img src="images/computerparts/storage/SPSSD.jpg">
                         <h4>SILICON POWER 256GB M.2 2280 GEN3X4</h4>
                         <h3>₱1,099</h3>
                     </div>
-
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/120GB SATA STORM 2.5.png">
+                        <h4>120GB SATA STORM 2.5</h4>
+                        <h3>₱1,200</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/APACER 256 SATA III 2.5.png">
+                        <h4>APACER 256 SATA III 2.5</h4>
+                        <h3>₱1,600</h3>
+                    </div>
                     <div class="col-4">
                         <img src="images/computerparts/storage/APACER512GB.jpg">
                         <h4>APACER SATA III 512GB 2.5 SSD</h4>
                         <h3>₱1,800</h3>
                     </div>
-
                     <div class="col-4">
-                        <img src="images/computerparts/storage/.jpg">
+                        <img src="images/computerparts/storage/CRUCIAL 500GB P3 PLUS GEN 4 NVME.png">
                         <h4>CRUCIAL 500GB P3 PLUS GEN 4 NVME</h4>
                         <h3>₱2,499</h3>
                     </div>
-
                     <div class="col-4">
-                        <img src="images/computerparts/storage/.jpg">
-                        <h4>APACER 1TB SSD SATA</h4>
-                        <h3>₱3,500</h3>
-                    </div>
-
-                    <div class="col-4">
-                        <img src="images/computerparts/storage/APACERNVMEM.2.jpg">
-                        <h4>APACER 1TB M.2 NVME</h4>
-                        <h3>₱4,000</h3>
-                    </div>
-
-                    <div class="col-4">
-                        <img src="images/computerparts/storage/.jpg">
+                        <img src="images/computerparts/storage/PNY CS2241 500GB SSD NVME GEN 4X4 M.2 NVME.png">
                         <h4>PNY CS2241 500GB SSD NVME GEN 4X4 M.2 NVME</h4>
                         <h3>₱2,800</h3>
                     </div>
-
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/LEXAR NM610 PRO 500GB M2 NVME SSD.png">
+                        <h4>LEXAR NM610 PRO 500GB M2 NVME SSD</h4>
+                        <h3>₱3,000</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/APACER 1TB SSD SATA.png">
+                        <h4>APACER 1TB SSD SATA</h4>
+                        <h3>₱3,500</h3>
+                    </div>
                     <div class="col-4">
                         <img src="images/computerparts/storage/SAMSUNG250GB.webp">
                         <h4>SAMSUNG EVO 250GB SSD SATA</h4>
                         <h3>₱3,500</h3>
                     </div>
-
                     <div class="col-4">
-                        <img src="images/computerparts/storage/.webp">
+                        <img src="images/computerparts/storage/CRUCIAL 1TB P3 M.2 NVME GEN 4.jpg">
                         <h4>CRUCIAL 1TB P3 M.2 NVME GEN 4</h4>
                         <h3>₱3,500</h3>
                     </div>
-
-                    <div class="col-4">
-                        <img src="images/computerparts/storage/.webp">
-                        <h4>SAMSUNG 1TB 980 EVO M.2 NVME</h4>
-                        <h3>₱6,600</h3>
-                    </div>
-
-                    <div class="col-4">
-                        <img src="images/computerparts/storage/.webp">
-                        <h4>APACER 256 SATA III 2.5</h4>
-                        <h3>₱1,600</h3>
-                    </div>
-
                     <div class="col-4">
                         <img src="images/computerparts/storage/LEXAR1TBSSD.png">
                         <h4>LEXAR NM610 1TB M.2 NVME SSD</h4>
                         <h3>₱3,800</h3>
                     </div>
-
                     <div class="col-4">
-                        <img src="images/computerparts/storage/.png">
-                        <h4>LEXAR NM610 PRO 500GB M2 NVME SSD</h4>
-                        <h3>₱3,000</h3>
+                        <img src="images/computerparts/storage/APACERNVMEM.2.jpg">
+                        <h4>APACER 1TB M.2 NVME</h4>
+                        <h3>₱4,000</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computerparts/storage/SAMSUNG 1TB 980 EVO M.2 NVME.webp">
+                        <h4>SAMSUNG 1TB 980 EVO M.2 NVME</h4>
+                        <h3>₱6,600</h3>
                     </div>
                 </div>
             </div>
@@ -697,19 +702,6 @@
                 </div>
             </div>
 
-            <!-- <div id="fan" class="category">
-                <h2>FAN</h2>
-                <div class="row">
-                    <div class="col-4">
-                        <img src="images/computerparts/apacerram.jpg">
-                        <h4>LUNAR SET</h4>
-                        <h3>₱23,000</h3>
-                    </div>
-                </div>
-            </div> -->
-
- 
-
         </div>
     </div>
 
@@ -723,8 +715,7 @@
                 <div class="footer-col-2">
                     <h3>FOLLOW US</h3>
                     <ul>
-                        <li>FACEBOOK</li>
-                        <li>GMAIL</li>
+                        <li><a href="https://www.facebook.com/pcbytecomputerBAGUIO" style="text-decoration: underline;">FACEBOOK</a></li>
                     </ul>
                 </div>
                 <div class="footer-col-3">

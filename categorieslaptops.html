@@ -7,18 +7,8 @@
     <title>All Products - PC Byte Computer Parts and Accessories</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <!-- <script>
-        function showCategory(category) {
-            var categories = document.getElementsByClassName('category');
-            for (var i = 0; i < categories.length; i++) {
-                categories[i].style.display = 'none';
-            }
-            document.getElementById(category).style.display = 'table-row-group';
-        }
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-    </script> -->
+    <script src="script.js"></script>
+
     <style>
         .parts {
             padding: 10px 10px;
@@ -40,6 +30,22 @@
 
 <body>
 
+    <div class="floating-button" onclick="toggleMessenger()">
+        <img src="chat/chat (3).png" alt="Floating Button" />
+      </div>
+      <div id="messengerBox" class="messenger-box" style="display: none">
+        <h2>Hi Bossing!</h2>
+        <p>Let us know if we can help you with anything at all.</p>
+        <a href="https://web.facebook.com/messages/t/112410887229785" class="facebook">
+            <img src="chat/messenger_1617469.png" alt="Messenger Icon" />
+          <span>Facebook</span>
+        </a>
+        <a href="#" class="closeButton" onclick="closeMessenger()">
+          Close
+        </a>
+      </div>
+      <div id="message" style="display: none"></div>
+
     <div class="container">
         <div class="navbar">
             <a href="index.html" class="logo">
@@ -47,10 +53,10 @@
             </a>
             <nav>
                 <ul class="menu__box" id="MenuItems">
-                    <li><a class="menu__item" href="categorieslaptops.html">LAPTOPS</a></li>
-                    <li><a class="menu__item" href="categoriespcparts.html">PC PARTS</a></li>
-                    <li><a class="menu__item" href="categoriesperipherals.html">PERIPHERALS</a></li>
-                    <li><a class="menu__item" href="categoriesaccessoriesandothers.html">ACCESSORIES AND OTHERS</a></li>
+                    <li><a class="menu__item" href="categorieslaptops.html"><img src="images/categories/laptop image.png" style="width: 30px; height: 30px;">Laptop</a></li>
+                    <li><a class="menu__item" href="categoriespcparts.html"><img src="images/categories/pcparticon.png" style="width: 30px; height: 30px;"/>PC Part</a></li>
+                    <li><a class="menu__item" href="categoriesperipherals.html"><img src="images/categories/peripherals.png " style="width: 30px; height: 30px;"/>Peripherals</a></li>
+                    <li><a class="menu__item" href="categoriesaccessoriesandothers.html"><img src="images/categories/router.png" style="width: 30px; height: 30px;"/>Accessories & Others</a></li>
                 </ul>
             </nav>
         </div>
@@ -83,43 +89,55 @@
             <div id="graphics-cards" class="category">
                 <h2>Acer & Dell</h2>
                 <div class="row">
+
                     <div class="col-4">
-                        <img src="images/computerparts/graphicscard/1rog4gb560.png" alt="Samsung 1TB 980 EVO M.2 NVMe">
-                        <h4>SAMSUNG 1TB 980 EVO M.2 NVME</h4>
-                        <h3>₱6,600</h3>
-                        <a href="https://web.facebook.com/messages/t/112410887229785?message=I%20am%20interested%20in%20the%20Samsung%201TB%20980%20EVO%20M.2%20NVMe%20for%20₱6,600." target="_blank">
-                            <button>Inquire</button>
+                        <a href="" target="_blank">
+                            <img src="images/computerparts/MONITOR/nitrov15.avif" alt="NITRO V15">
+                            <h4>NITRO V 15</h4>
+                            <h3>₱49,450.00</h3>
+                            <h5>ANV15-41-R2Y3 | NH.QPEAA.002
+                                <p>Windows 11 Home</p>
+                                <p>AMD Ryzen™ 5 7535HS processor Hexa-core 3.30 GHz</p>
+                                <p>NVIDIA® GeForce RTX™ 4050 with 6 GB dedicated memory</p>
+                                <p>15.6" Full HD (1920 x 1080) 16:9 IPS 144 Hz</p>
+                                <p>16 GB, DDR5 SDRAM</p>
+                                512 GB SSD</h5>
                         </a>
                     </div>
+
                     <div class="col-4">
-                        <a href="https://web.facebook.com/messages/t/112410887229785?message=I%20am%20interested%20in%20the%20Samsung%201TB%20980%20EVO%20M.2%20NVMe%20for%20₱6,600." target="_blank">
-                            <img src="images/computerparts/graphicscard/1rog4gb560.png" alt="Samsung 1TB 980 EVO M.2 NVMe">
-                            <h4>SAMSUNG 1TB 980 EVO M.2 NVME</h4>
-                            <h3>₱6,600</h3>
+                        <a href="" target="_blank">
+                            <img src="images/computerparts/MONITOR/bravo15.webp" alt="NITRO V15">
+                            <h4>MSI Bravo 15</h4>
+                            <h3>₱40,000.00</h3>
+                            <h5>MSI Bravo 15 C7VE-274PH GeForce RTX™ 4050 AMD Ryzen™ 5 Laptop (Black)
+                                MSI BRAVO 15 C7VE-274PH BLACK RYZEN 5 7535HS/8GB DDR4/512GB NVME PCIE SSD/15.6" FHD IPS 144HZ/NVIDIA GEFORCE RTX4050 6GB GDDR6/WINDOWS
+                                 11 HOME SL 64BIT/BACKLIT KB/CAMERA/WIFI/BT/LAN/AUDIO & MIC PORT/USB 3.0/USB TYPE-C/HDMI/LAPTOP</h5>
                         </a>
                     </div>
+
                     <div class="col-4">
-                        <img src="images/computerparts/graphicscard/1rog4gb560.png" alt="Acer Nitro V">
-                        <h4>ACER NITRO V</h4>
-                        <h3>₱55,500.00</h3>
-                        <a href="https://web.facebook.com/messages/t/112410887229785?message=I%20am%20interested%20in%20the%20Acer%20Nitro%20V%20for%20₱55,500.00." target="_blank">
-                            <button>Inquire</button>
+                        <a href="" target="_blank">
+                            <img src="images/computerparts/MONITOR/dellvostro.png" alt="NITRO V15" style="margin-bottom: 55px;">
+                            <h4>DELL Vostro 3520</h4>
+                            <h3>₱27,950.00</h3>
+                            <h5>CPU - 512GB
+                                <p>Memory - 8GB</p>
+                                <p>Hard Drive - Core i3-1215U</p>
+                                    OS - 15.6" FHD
+                                    Graphics - Intel UHD
+                                    Screen -   Ubuntu
+                                    Keyboard - 1Y support
+                                    Warranty - English
+                            </h5>
                         </a>
                     </div>
-                    <div class="col-4">
-                        <img src="images/computerparts/graphicscard/amd.png" alt="Dell Laptop">
-                        <h4>DELL</h4>
-                        <h3>₱33,000.00</h3>
-                        <a href="https://web.facebook.com/messages/t/112410887229785?message=I%20am%20interested%20in%20the%20Dell%20Laptop%20for%20₱33,000.00." target="_blank">
-                            <button>Inquire</button>
-                        </a>
-                    </div>
+
                 </div>
             </div>
     
         </div>
     </div>
-    
     <!-------------- footer -------------->
     <div class="footer">
         <div class="container">
@@ -130,8 +148,7 @@
                 <div class="footer-col-2">
                     <h3>FOLLOW US</h3>
                     <ul>
-                        <li>FACEBOOK</li>
-                        <li>GMAIL</li>
+                        <li><a href="https://www.facebook.com/pcbytecomputerBAGUIO" style="text-decoration: underline;">FACEBOOK</a></li>
                     </ul>
                 </div>
                 <div class="footer-col-3">

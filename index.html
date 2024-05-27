@@ -12,6 +12,24 @@
   </head>
 
   <body>
+    <!-- ---------------------------------------- -->
+    <div class="floating-button" onclick="toggleMessenger()">
+      <img src="chat/chat (3).png" alt="Floating Button" />
+    </div>
+    <div id="messengerBox" class="messenger-box" style="display: none">
+      <h2>Hi Bossing!</h2>
+      <p>Let us know if we can help you with anything at all.</p>
+      <a href="https://web.facebook.com/messages/t/112410887229785" class="facebook">
+        <img src="chat/messenger_1617469.png" alt="Messenger Icon" />
+        <span>Facebook</span>
+      </a>
+      <a href="#" class="closeButton" onclick="closeMessenger()">
+        Close
+      </a>
+    </div>
+    <div id="message" style="display: none"></div>
+    <!-- ------------------------------------------ -->
+
     <div class="container">
       <div class="navbar">
         <a href="index.html" class="logo">
@@ -19,8 +37,7 @@
         </a>
         <nav>
           <ul class="menu__box" id="MenuItems">
-            <li><a class="rew" href="#contact">CONTACT</a></li>
-            <li><a class="rew" href="#">ACCOUNT</a></li>
+            <li><a class="menu__item" href="#contact"><img src="images/contact-mail.png" style="width: 30px; height: 30px;">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -54,6 +71,7 @@
         </div>
       </div>
 
+
       <div class="col-4">
         <a href="https://www.facebook.com/messages/t/112410887229785" target="_blank">
             <img src="" alt="">
@@ -62,47 +80,31 @@
 
     <div class="slideshow-container">
       <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
+        <div class="numbertext">1 / 2</div>
         <a href="https://www.facebook.com/pcbytecomputerBAGUIO" target="_blank">
           <img src="images/mop/qwer.jpg" alt="FACEBOOK" style="width: 100%">
           <h4 class="text">FACEBOOK</h4>
       </a>
       </div>
       <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
+        <div class="numbertext">2 / 2</div>
         <a href="https://www.facebook.com/pcbytecomputerBAGUIO/posts/pfbid02mA1XNcUd6XT82Df45U6ThcpWCpYcwicFqoTD4CFXdFACLiXhSAijUzfCYHkbGmARl" target="_blank">
           <img src="images/mop/harrison road.jpg" alt="LOCATION" style="width: 100%">
           <h4 class="text">LOCATION</h4>
       </a>
       </div>
-      <div class="mySlides fade">
+      <!-- <div class="mySlides fade">
         <div class="numbertext">3 / 3</div>
         <img src="images/mop/qwer.jpg" style="width:100%">
-        <div class="text">New York, USA</div>
-      </div>
+        <div class="text"></div>
+      </div> -->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
 
-      <!-- <div class="row">
-        <div class="col-2">
-          <h1>Build Your Own PC</h1>
-          <p></p>
-          <a href="https://www.facebook.com/pcbytecomputerBAGUIO" class="btn"
-            >FACEBOOK &#8594;</a
-          >
-        </div>
-        <div class="col-2">
-          <img src="images/aibuild.png" alt="" />
-        </div> -->
       </div>
-    </div><br><br><br><br><br><br><br><br><br><br>
+    </div><br>
 
     <!------------------ CATEGORIES ------------- ---->
 
@@ -263,8 +265,37 @@
                   <img src="images/ADP/ADVANCEDSUMMERSET5.jpg">
                 </div>
             </div>
+          </div>
         </div>
-    </div>
+
+            <h1 class="title">PCByte Specials</h1>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/ADP/Special/los santos.jpg">
+                </div>
+                <div class="col-4">
+                    <img src="images/ADP/Special/zero dawn.jpg">
+                </div>
+                <div class="col-4">
+                    <img src="images/ADP/Special/golden mirage.jpg">
+                </div>
+                <div class="col-4">
+                    <img src="images/ADP/Special/ancient odyssey.jpg">
+                </div>
+                <div class="col-4">
+                  <img src="images/ADP/Special/night city.jpg">
+                </div>
+                <div class="col-4">
+                    <img src="images/ADP/Special/the winters.jpg">
+                </div>
+                <div class="col-4">
+                  <img src="images/ADP/Special/deacon st john.jpg">
+                </div>
+            </div>
+
+            <center><h2>◼️◼◼️◼◼️◼◼️◼◼️</h2></center>
+
+
 
         <!------------------- mode of payment -------------------->
 
@@ -384,8 +415,7 @@
           <div class="footer-col-2">
             <h3>FOLLOW US</h3>
             <ul>
-              <li>FACEBOOK</li>
-              <li>GMAIL</li>
+              <li><a href="https://www.facebook.com/pcbytecomputerBAGUIO" style="text-decoration: underline;">FACEBOOK</a></li>
             </ul>
           </div>
           <div class="footer-col-3">
@@ -474,5 +504,7 @@
     dots[slideIndex - 1].className += " active";
   }
 </script>
+<script src="script.js"></script>
+
   </body>
 </html>

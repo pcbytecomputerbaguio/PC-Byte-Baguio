@@ -95,9 +95,28 @@
         document.getElementById("myDropdown").classList.toggle("show");
       }
     </script>
+    <script src="script.js"></script>
+
   </head>
   
   <body>
+
+    <div class="floating-button" onclick="toggleMessenger()">
+      <img src="chat/chat (3).png" alt="Floating Button" />
+    </div>
+    <div id="messengerBox" class="messenger-box" style="display: none">
+      <h2>Hi Bossing!</h2>
+      <p>Let us know if we can help you with anything at all.</p>
+      <a href="https://web.facebook.com/messages/t/112410887229785" class="facebook">
+        <img src="chat/messenger_1617469.png" alt="Messenger Icon" />
+        <span>Facebook</span>
+      </a>
+      <a href="#" class="closeButton" onclick="closeMessenger()">
+        Close
+      </a>
+    </div>
+    <div id="message" style="display: none"></div>
+
     <div class="container">
       <div class="navbar">
         <a href="index.html" class="logo">
